@@ -11,3 +11,7 @@ This tool isn't needed to be paid or anything, I made this to help the community
 Enjoy it!
 
 [Donate in USD](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZWUU2WZZZHBHW&source=url)    [Doe em BRL](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMQDJLF78M3KL&source=url)
+
+
+Screenshot:
+![Screen 1](https://i.imgur.com/Z5BOHOL.png)
