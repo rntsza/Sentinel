@@ -117,25 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BotToken" xml:space="preserve">
-    <value>hhn4jqsu5h4es0ge8yeizn2vnlz0em</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1X227bRhB9L9B/IPapARytLy+NQSZwJLsQGtlG6OR9RY6kRfbC7i5d6dv60E/KL3RWvJOSJblBUeiFHM6cmTk7l9X3v/4OP6ylCJ7BWK5VRC5G5yQAleiUq2VEcrd4+yv58P7nn8LbVK6Dr5XelddDS2UjsnIuu6bUJiuQzI4kT4y2euFGiZaUpZpenp+/oxcXFBCCIFYQhJ9z5biE7Qu+jrVKIHM5EzOdgrClHL/EW9TgnkmwGUsgIjGgqQIxuhGCBDeCM+uFYkECppR2zGGE118sxM5otYwzFDDxtMkA9RZMWCgjv27Uj03i/NInQRvDCirJrdPyRMCLq5IV2jd/FbekZg15u0WS3MZnveUuIk9/cpeskBZDgr6767EwXrVL7qgxOQuqD2d1DWCp+N9ZMM6Fyw1ECnJnGGo85nPBk99h86S/gYpUjgfVig2jw28dAYoejc7AuM1nWJQRT1MS0K4d7RvWZi2bIpOpcleXJLhH52wuoD76Vtax0wZ+AwWGOUgfmXNglMeALXkD7z1fBT3TySGPL6N4ehU+VShYtdh6JJix9SdQS7eKCD6S4I6vIa0kJfIXxbFT0ciZ/KCjGVjLlj/aT0ibShvWH/a1Y1g2pozBv8PaTT7uqEEkoixDWzrqplMgxuAGBW1J0ARRzIJRu9x3xVtH1owaWsyaaibRPUMpnLEsQ+paQ6qUBHExocZv49MbWBYYNLE7+riOtvaEpYuH2fvqCU7hjhvrJsyxOfOHN07lDrXqHPZwXPkZUt3v24b5ysY/F3Z7pkkfo2HwDpOSaLTND+poOtNrYLzdEkwws2MWjLXIpdo3T16ybrq7jdFIj0dqOryN1EiPR6pbuA1UC4c4Ie3x2j88Oji93rztF8RLndRXqb3XHdXrnLCs4sM7f1DWhQoJkKBnnvqSjjfWgRx5hVH8hxgLjvk2CjOm+AKsK1YSweV72bs8/H8WObU2FUdv8/98s3LP68HdeeIa7C/TrZN/uUrVMzPJiplfJFu/aaO9Yl2egHXqSuxP7GPX3oGtV7RIRNK5xiSKYDs785Vrcdi0IW1f58MJWL5sIPzlXkHiu6EBrXSmaqEr4jHHdkSVyuBcHEuRqhvj+IIlDj8neFTbu8xXJnJUuZVzSKfqIXdZ7m6sBTkXndtcSF/2v9393ZjDh8y/2R+RAobJMQV4UB9zLtI67rthke+D8FVTdh9GhXc5hFtuaqR7rY4EKumbQAbK9+4TyEwgmH1QMXuG18SG5fUJlizZVLN3P8jhg+jSHk44WxombYnR2Pu/qNT/R33/D5tmb3TVDgAA</value>
   </data>
-  <data name="BotUsername" xml:space="preserve">
-    <value>SentinelaDetectora</value>
-  </data>
-  <data name="ChannelName" xml:space="preserve">
-    <value>sentineladetectora</value>
-  </data>
-  <data name="ClientID" xml:space="preserve">
-    <value>inawxdk7ublczaldhc86b519g4vjmw</value>
-  </data>
-  <data name="FeraMaximo" xml:space="preserve">
-    <value>feramaximo</value>
-  </data>
-  <data name="GauChannelName" xml:space="preserve">
-    <value>gaules</value>
-  </data>
-  <data name="TwitchChatOAuthPasswordGenerator" xml:space="preserve">
-    <value>oauth:6wvpi9cd3ffjjirq9enpchnclfp0ar</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

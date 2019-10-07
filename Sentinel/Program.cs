@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace Sentinel
 {
     class Program
@@ -10,17 +9,6 @@ namespace Sentinel
             TwitchChatBot bot = new TwitchChatBot();
             bot.Connect();
 
-            /*try
-            {
-                while (true)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                }
-            }
-            catch
-            {
-
-            }*/
             Console.ReadLine();
 
             bot.Disconnect();

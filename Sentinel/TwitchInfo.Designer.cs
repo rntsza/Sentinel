@@ -97,6 +97,24 @@ namespace Sentinel {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to feramaximo.
+        /// </summary>
+        internal static string FeraMaximo {
+            get {
+                return ResourceManager.GetString("FeraMaximo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to gaules.
+        /// </summary>
+        internal static string GauChannelName {
+            get {
+                return ResourceManager.GetString("GauChannelName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to oauth:6wvpi9cd3ffjjirq9enpchnclfp0ar.
         /// </summary>
         internal static string TwitchChatOAuthPasswordGenerator {

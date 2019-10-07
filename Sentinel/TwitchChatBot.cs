@@ -1,24 +1,16 @@
 ﻿using System;
-using TwitchLib;
 using TwitchLib.Client.Models;
-using TwitchLib.Api.V5.Models.UploadVideo;
 using TwitchLib.Api;
 using TwitchLib.Client;
-using TwitchLib.Client.Common;
-using TwitchLib.Api.Events;
-using TwitchLib.Communication.Events;
 using TwitchLib.Client.Events;
-using TwitchLib.PubSub.Events;
-using TwitchLib.Client.Enums;
 using TwitchLib.Api.V5.Models.Users;
+using Sentinel.All;
 
 namespace Sentinel
 {
     internal class TwitchChatBot
     {
-
         ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.BotToken);
-        //ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.TwitchChatOAuthPasswordGenerator);
         TwitchClient client;
         TwitchAPI api = new TwitchAPI();
         
@@ -32,15 +24,14 @@ namespace Sentinel
             Console.WriteLine("Connecting");
             client = new TwitchClient();
 
-            client.Initialize(credentials, TwitchInfo.ChannelName);
+            client.Initialize(credentials, TwitchInfo.GauChannelName);
             client.OnLog += Client_OnLog;
             client.OnConnectionError += Client_OnConnectionError;
-            // Até aqui tá ótimo
+            // Until here, thats all ok
 
-            // Receber mensagem e mendar resposta.
+            // 
             client.OnMessageReceived += Client_OnMessageReceived;
             //
-
 
             client.Connect();
 
@@ -49,14 +40,12 @@ namespace Sentinel
 
         private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
         {
-            if(e.ChatMessage.Message.StartsWith("Salve", StringComparison.InvariantCultureIgnoreCase))
+            if (e.ChatMessage.Message != null)
             {
-                client.SendMessage(TwitchInfo.ChannelName, $"Salve {e.ChatMessage.DisplayName}");
-            }
-            else if(e.ChatMessage.Message.StartsWith("!uptime", StringComparison.InvariantCultureIgnoreCase))
-            {
-                client.SendMessage(TwitchInfo.ChannelName, GetUpTime()?.ToString() ?? "Offline");
-            }
+                Console.WriteLine("Salvei no banco!");
+                
+                SaveDataBase(e.ChatMessage.DisplayName, e.ChatMessage.UserId, e.ChatMessage.Message);
+            } 
         }
 
         TimeSpan? GetUpTime()
@@ -82,18 +71,29 @@ namespace Sentinel
 
         private void Client_OnLog(object sender, OnLogArgs e)
         {
-            //Console.WriteLine(e.Data);
+            Console.WriteLine(e.Data);
         }
         private void Client_OnConnectionError(object sender, OnConnectionErrorArgs e)
         {
             Console.WriteLine($"Erro! : {e.Error}");
         }
 
-
-
         internal void Disconnect()
         {
             Console.WriteLine("Disconnecting");
+        }
+
+        private void SaveDataBase(string twitchid, string userid, string message)
+        {
+            ContextDB db = new ContextDB();
+            TwitchUser user = new TwitchUser();
+
+            user.Username = twitchid;
+            user.Message = message;
+            user.TwitchID = int.Parse(userid);
+
+            db.TwitchUsers.Add(user);
+            db.SaveChanges();
         }
     }
 }
