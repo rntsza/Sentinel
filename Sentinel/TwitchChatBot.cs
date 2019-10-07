@@ -42,7 +42,7 @@ namespace Sentinel
         {
             if (e.ChatMessage.Message != null)
             {
-                Console.WriteLine("Salvei no banco!");
+                Console.WriteLine("Saved on database!");
                 
                 SaveDataBase(e.ChatMessage.DisplayName, e.ChatMessage.UserId, e.ChatMessage.Message);
             } 
