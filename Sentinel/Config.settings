@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sentinel" GeneratedClassName="Config">
+  <Profiles />
+  <Settings>
+    <Setting Name="BotToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hhn4jqsu5h4es0ge8yeizn2vnlz0em</Value>
+    </Setting>
+    <Setting Name="BotUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SentinelaDetectora</Value>
+    </Setting>
+    <Setting Name="ChannelName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gaules</Value>
+    </Setting>
+    <Setting Name="ClientID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">inawxdk7ublczaldhc86b519g4vjmw</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -10,7 +10,8 @@ namespace Sentinel
 {
     internal class TwitchChatBot
     {
-        ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.BotToken);
+        //ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.BotUsername, TwitchInfo.BotToken);
+        ConnectionCredentials credentials = new ConnectionCredentials(Config.Default.BotUsername, Config.Default.BotToken);
         TwitchClient client;
         TwitchAPI api = new TwitchAPI();
         
@@ -24,7 +25,7 @@ namespace Sentinel
             Console.WriteLine("Connecting");
             client = new TwitchClient();
 
-            client.Initialize(credentials, TwitchInfo.GauChannelName);
+            client.Initialize(credentials, Config.Default.ChannelName);
             client.OnLog += Client_OnLog;
             client.OnConnectionError += Client_OnConnectionError;
             // Until here, thats all ok
@@ -35,7 +36,7 @@ namespace Sentinel
 
             client.Connect();
 
-            api.Settings.ClientId = TwitchInfo.ClientID;
+            api.Settings.ClientId = Config.Default.ClientID;
         }
 
         private void Client_OnMessageReceived(object sender, OnMessageReceivedArgs e)
@@ -50,7 +51,7 @@ namespace Sentinel
 
         TimeSpan? GetUpTime()
         {
-            string userId = GetUserId(TwitchInfo.ChannelName);
+            string userId = GetUserId(Config.Default.ChannelName);
             if(userId == null)
             {
                 return null;
