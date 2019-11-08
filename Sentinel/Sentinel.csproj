@@ -208,11 +208,6 @@
       <DependentUpon>Config.settings</DependentUpon>
     </Compile>
     <Compile Include="TwitchChatBot.cs" />
-    <Compile Include="TwitchInfo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TwitchInfo.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -232,10 +227,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910062303517_AddTwitchID.resx">
       <DependentUpon>201910062303517_AddTwitchID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TwitchInfo.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TwitchInfo.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

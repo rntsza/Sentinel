@@ -25,7 +25,7 @@ namespace Sentinel {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("hhn4jqsu5h4es0ge8yeizn2vnlz0em")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Token what was generated on Twitch")]
         public string BotToken {
             get {
                 return ((string)(this["BotToken"]));
@@ -37,7 +37,7 @@ namespace Sentinel {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SentinelaDetectora")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Name of your bot(your user)")]
         public string BotUsername {
             get {
                 return ((string)(this["BotUsername"]));
@@ -49,7 +49,7 @@ namespace Sentinel {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("gaules")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Name of channel what you want to ~watch~")]
         public string ChannelName {
             get {
                 return ((string)(this["ChannelName"]));
@@ -61,7 +61,7 @@ namespace Sentinel {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("inawxdk7ublczaldhc86b519g4vjmw")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ClientID what was generated on Twitch")]
         public string ClientID {
             get {
                 return ((string)(this["ClientID"]));
