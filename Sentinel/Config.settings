@@ -3,16 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="BotToken" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Token what was generated on Twitch</Value>
+      <Value Profile="(Default)">hhn4jqsu5h4es0ge8yeizn2vnlz0em</Value>
     </Setting>
     <Setting Name="BotUsername" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Name of your bot(your user)</Value>
+      <Value Profile="(Default)">SentinelaDetectora</Value>
     </Setting>
     <Setting Name="ChannelName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Name of channel what you want to ~watch~</Value>
+      <Value Profile="(Default)">gaules</Value>
     </Setting>
     <Setting Name="ClientID" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ClientID what was generated on Twitch</Value>
+      <Value Profile="(Default)">inawxdk7ublczaldhc86b519g4vjmw</Value>
     </Setting>
   </Settings>
 </SettingsFile>
